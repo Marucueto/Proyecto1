@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario</title>
+</head>
+<body>
+	<form method="post" action="enviador.php"> <!-- post=protocolo deldervidor. Hace todo invisible al usuario. Get= comunica los datos mediante URL (cambia la url cuano escribimos y le damos enter) action > quien procesa la información del formulario. -->
+		<label for="Estenombre">Nombre:</label>
+		<input type="text" name="Estenombre" placeholder="ingresá tu nombre" required>
+
+		<br/>
+
+		<label for="correo">Email:</label>
+		<input type="email" name="correo" placeholder="ingresá tu mail" required>
+
+		<br/>
+
+		<label for="edad">Edad</label>
+		<input type="number" name="edad" placeholder="Ingresá tu edad">
+
+		<br/>
+
+		<label for="telefono">Teléfono</label>
+		<input type="tel" name="telefono" placeholder="Ingresá tu teléfono">
+
+		<br/>
+
+		<label for="gender">Sexo:</label><br/>
+		<input type="radio" name="gender" value="male" checked> Male<br>
+  		<input type="radio" name="gender" value="female"> Female<br>
+  		<input type="radio" name="gender" value="other"> Other
+
+  		<br/>
+
+		<label>Foto</label>
+		<input type="file" name="foto">
+
+		<br/>
+
+		<input type="checkbox" name="Novedades"> Deseo recibir novedades.
+
+		<br/>
+
+		<label for="mensaje">Comentarios</label>
+		<textarea name="mensaje" placeholder="Dejá tu comentario"></textarea>
+
+		<br/>
+
+
+
+	<!-- en LABEL FOR tiene que ir el mismo nombre que ponemos abajo en INPUT NAME -->
+	</form>
+</body>
+</html>
